@@ -4,8 +4,8 @@ import gnupg
 import getpass
 from Tkinter import *
 
-secret = getpass.getpass("enter password ")
-path = "~/path/to/youre/key/" # alternative is hardcoding or masking with getpass()
+secret = getpass.getpass("enter password")
+path = getpass.getpass("~/path/to/youre/key/") # alternative is hardcoding or using arguments
 
 def auth():
 
